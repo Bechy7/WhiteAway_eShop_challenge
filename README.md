@@ -1,1 +1,0 @@
-# WhiteAway_eShop_challenge
