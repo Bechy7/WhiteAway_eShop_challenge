@@ -3,8 +3,9 @@
 import React, { Component } from 'react';
 import Paper from '@material-ui/core/Paper';
 import './Styles.css'
+import NavigationBar from './NavigationBar'
 
-class App extends Component {
+class Product extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,10 +15,12 @@ class App extends Component {
 
     IncrementItem = () => {
         this.setState({ clicks: this.state.clicks + 1 });
+        // NavigationBar.IncrementItem()
     }
     DecreaseItem = () => {
         if (this.state.clicks > 0) {
             this.setState({ clicks: this.state.clicks - 1 });
+            // NavigationBar.DecreseItem()
         }
     }
 
@@ -54,4 +57,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Product;

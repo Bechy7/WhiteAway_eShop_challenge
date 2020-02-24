@@ -23,6 +23,12 @@ label {
     font-size: 24px;
 }
 
+.div-navbar {
+    width: auto;
+    background-color: #28292e;
+    margin: -8px;
+}
+
 .div-padding {
     padding: 16px;
 }
@@ -46,4 +52,18 @@ img {
     width: 200px;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.img-navbar {
+    width: 200px;
+    padding: 8px;
+    padding-left: 16px;
+}
+
+.btn-cart {
+    align-self: right;
+    background-color: #28292e;
+    border-width: 1px;
+    color: white;
+    width: 96px;
 }
