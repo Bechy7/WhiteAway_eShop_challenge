@@ -1,0 +1,49 @@
+label {
+    width:150px;
+    display: inline-block;
+    text-align: center;
+}
+
+.label-name {
+    text-align: left;
+    color: blue;
+    font-size: 18px;
+}
+
+.label-desc {
+    text-align: left;
+    color: gray;
+    font-size: 16px;
+}
+
+.label-price {
+    padding-left: 4px;
+    padding-top: 12px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.div-padding {
+    padding: 16px;
+}
+
+.div-amount {
+    align-items: flex-start;
+    padding-top: 12px;
+}
+
+.div-image {
+    text-align: center;
+}
+
+.div-list {
+    padding-top: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+img {
+    width: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+}

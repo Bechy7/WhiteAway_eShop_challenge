@@ -1,20 +1,28 @@
 // src/js/components/List.js
 
 import React from "react";
+import Product from "./Product";
 import { connect } from "react-redux";
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import './Styles.css'
 
-const mapStateToProps = state => {
-  return { articles: state.articles };
-};
+export default function SpacingGrid() {
+  const [spacing] = React.useState(8);
 
-const ConnectedList = ({ articles }) => (
-  <ul>
-    {articles.map(el => (
-      <li key={el.id}>{el.title}</li>
-    ))}
-  </ul>
-);
-
-const List = connect(mapStateToProps)(ConnectedList);
-
-export default List;
+  return (
+    <div class="div-list">
+    <Grid container flexGrow="1" spacing={2}>
+      <Grid item xs={12}>
+        <Grid container justify="center" spacing={spacing}>
+          {[0, 1, 2, 3, 4, 5].map(value => (
+            <Grid key={value} item>
+              <Product/>
+            </Grid>
+          ))}
+        </Grid>
+      </Grid>
+    </Grid>
+    </div>
+  );
+}
