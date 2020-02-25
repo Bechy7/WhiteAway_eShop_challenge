@@ -3,9 +3,9 @@
 import React from "react";
 import Product from "./Product";
 import { connect } from "react-redux";
-import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import './Styles.css'
+import { getData } from "../actions/index";
 
 export default function SpacingGrid() {
   const [spacing] = React.useState(8);
