@@ -8,7 +8,16 @@ import NavigationBar from './NavigationBar'
 class Product extends Component {
     constructor(props) {
         super(props);
+        console.log("props:" + props.product.name);
         this.state = {
+            npkId: `${props.product.npkId}`,
+            productId: props.product.productId,
+            url: `${props.product.url}`,
+            name: `${props.product.name}`,
+            image: `${props.product.image}`,
+            brand: `${props.product.brand}`,
+            price: props.product.price,
+
             clicks: 0,
         };
     }
@@ -29,26 +38,26 @@ class Product extends Component {
             <Paper>
                 <div class="div-padding">
                     <div class="div-image">
-                        <img alt="Electrolux" src="https://images.wagcdn.com/500/500/fill/p/prod_auto/frituregryde/hd9650-90.jpg" />
+                        <img alt={this.state.brand} src={this.state.image} />
                     </div>
                     <div>
                         <label class="label-name">
-                            Electrolux
+                            {this.state.brand}
                         </label>
                     </div>
                     <div>
                         <label class="label-desc">
-                            Description
+                        {this.state.name}
                     </label>
                     </div>
                     <div>
                         <label class="label-price">
-                            501,-
+                        {this.state.price},-
                     </label>
                     </div>
                     <div class="div-amount">
                         <button onClick={this.DecreaseItem}>-</button>
-                        <label>{this.state.clicks}</label>
+                        <label class="label-clicks">{this.state.clicks}</label>
                         <button onClick={this.IncrementItem}>+</button>
                     </div>
                 </div>

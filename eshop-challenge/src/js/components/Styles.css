@@ -1,4 +1,4 @@
-label {
+.label-clicks {
     width:150px;
     display: inline-block;
     text-align: center;
@@ -58,12 +58,4 @@ img {
     width: 200px;
     padding: 8px;
     padding-left: 16px;
-}
-
-.btn-cart {
-    align-self: right;
-    background-color: #28292e;
-    border-width: 1px;
-    color: white;
-    width: 96px;
 }

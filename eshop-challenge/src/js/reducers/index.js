@@ -1,13 +1,13 @@
 import { DATA_LOADED } from "../constants/action-types";
 
 const initialState = {
-  remoteArticles: []
+  products: []
 };
 
 function rootReducer(state = initialState, action) {
   if (action.type === DATA_LOADED) {
     return Object.assign({}, state, {
-      remoteArticles: state.remoteArticles.concat(action.payload)
+      products: state.products.concat(action.payload)
     });
   }
   return state;
