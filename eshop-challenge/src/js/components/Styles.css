@@ -4,13 +4,13 @@
     text-align: center;
 }
 
-.label-name {
+.label-brand {
     text-align: left;
     color: blue;
     font-size: 18px;
 }
 
-.label-desc {
+.label-name {
     text-align: left;
     color: gray;
     font-size: 16px;

@@ -10,15 +10,7 @@ class Product extends Component {
         super(props);
         console.log("props:" + props.product.name);
         this.state = {
-            npkId: `${props.product.npkId}`,
-            productId: props.product.productId,
-            url: `${props.product.url}`,
-            name: `${props.product.name}`,
-            image: `${props.product.image}`,
-            brand: `${props.product.brand}`,
-            price: props.product.price,
-
-            clicks: 0,
+            clicks: 0
         };
     }
 
@@ -38,21 +30,21 @@ class Product extends Component {
             <Paper>
                 <div class="div-padding">
                     <div class="div-image">
-                        <img alt={this.state.brand} src={this.state.image} />
+                        <img alt={this.props.product.brand} src={this.props.product.image} />
                     </div>
                     <div>
-                        <label class="label-name">
-                            {this.state.brand}
+                        <label class="label-brand">
+                            {this.props.product.brand}
                         </label>
                     </div>
                     <div>
-                        <label class="label-desc">
-                        {this.state.name}
+                        <label class="label-name">
+                        {this.props.product.name}
                     </label>
                     </div>
                     <div>
                         <label class="label-price">
-                        {this.state.price},-
+                        {this.props.product.price},-
                     </label>
                     </div>
                     <div class="div-amount">
