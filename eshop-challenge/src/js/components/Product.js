@@ -42,7 +42,7 @@ class Product extends Component {
                         {this.props.product.name}
                     </label>
                     </div>
-                    <div>
+                    <div class="div-price">
                         <label class="label-price">
                         {this.props.product.price},-
                     </label>

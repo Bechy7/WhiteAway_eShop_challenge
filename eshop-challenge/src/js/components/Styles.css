@@ -1,5 +1,5 @@
 .label-clicks {
-    width:150px;
+    width:100px;
     display: inline-block;
     text-align: center;
 }
@@ -18,9 +18,12 @@
 
 .label-price {
     padding-left: 4px;
-    padding-top: 12px;
     text-align: left;
     font-size: 24px;
+}
+
+.div-price {
+    padding-top: 12px;
 }
 
 .div-navbar {
