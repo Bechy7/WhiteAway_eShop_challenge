@@ -16,7 +16,7 @@ class Product extends Component {
 
     IncrementItem = () => {
         this.setState({ clicks: this.state.clicks + 1 });
-        // NavigationBar.IncrementItem()
+        //  NavigationBar.IncrementBasket();
     }
     DecreaseItem = () => {
         if (this.state.clicks > 0) {
@@ -30,7 +30,7 @@ class Product extends Component {
             <Paper>
                 <div class="div-padding">
                     <div class="div-image">
-                        <img alt={this.props.product.brand} src={this.props.product.image} />
+                        <img class="img-product" alt={this.props.product.brand} src={this.props.product.image} />
                     </div>
                     <div>
                         <label class="label-brand">

@@ -6,7 +6,6 @@ import { connect } from "react-redux";
 import Grid from '@material-ui/core/Grid';
 import './Styles.css'
 import { getData } from "../actions/index";
-import {TodoList} from "./Product";
 
 export class List extends Component {
   constructor(props) {
@@ -46,23 +45,3 @@ export default connect(
   mapStateToProps,
   { getData }
 )(List);
-
-export function SpacingGrid() {
-  const [spacing] = React.useState(8);
-
-  return (
-    <div class="div-list">
-    <Grid container flexgrow="1" spacing={2}>
-      <Grid item xs={12}>
-        <Grid container justify="center" spacing={spacing}>
-          {this.props.products.map(value => (
-            <Grid key={value} item>
-              <Product/>
-            </Grid>
-          ))}
-        </Grid>
-      </Grid>
-    </Grid>
-    </div>
-  );
-}

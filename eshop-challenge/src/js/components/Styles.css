@@ -30,6 +30,8 @@
     width: auto;
     background-color: #28292e;
     margin: -8px;
+    display: flex; 
+    flex-direction: row;
 }
 
 .div-padding {
@@ -51,7 +53,7 @@
     padding-right: 64px;
 }
 
-img {
+.img-product {
     width: 200px;
     padding-left: 40px;
     padding-right: 40px;
@@ -61,4 +63,19 @@ img {
     width: 200px;
     padding: 8px;
     padding-left: 16px;
+}
+
+.img-cart {
+    width: 15px;
+    margin-left: 8px;
+    filter: brightness(100);
+}
+
+.btn-navbar-cart {
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    margin-right: 16px; 
+    background: transparent;
+    color: white;
 }
