@@ -1,14 +1,10 @@
-// src/js/components/Product.js
-
 import React, { Component } from 'react';
 import Paper from '@material-ui/core/Paper';
 import './Styles.css'
-import NavigationBar from './NavigationBar'
 
 class Product extends Component {
     constructor(props) {
         super(props);
-        console.log("props:" + props.product.name);
         this.state = {
             clicks: 0
         };
@@ -16,12 +12,10 @@ class Product extends Component {
 
     IncrementItem = () => {
         this.setState({ clicks: this.state.clicks + 1 });
-        //  NavigationBar.IncrementBasket();
     }
     DecreaseItem = () => {
         if (this.state.clicks > 0) {
             this.setState({ clicks: this.state.clicks - 1 });
-            // NavigationBar.DecreseItem()
         }
     }
 

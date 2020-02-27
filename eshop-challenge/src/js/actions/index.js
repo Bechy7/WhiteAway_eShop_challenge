@@ -1,5 +1,3 @@
-// src/js/actions/index.js
-
 import { DATA_LOADED } from "../constants/action-types";
 
 export function getData() {

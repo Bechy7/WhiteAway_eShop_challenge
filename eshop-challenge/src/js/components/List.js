@@ -1,5 +1,3 @@
-// src/js/components/List.js
-
 import React, { Component } from "react";
 import Product from "./Product";
 import { connect } from "react-redux";
@@ -8,9 +6,6 @@ import './Styles.css'
 import { getData } from "../actions/index";
 
 export class List extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     this.props.getData();
