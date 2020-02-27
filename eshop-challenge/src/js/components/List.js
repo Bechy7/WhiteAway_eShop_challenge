@@ -30,6 +30,7 @@ export class List extends Component {
   }
 }
 
+//Connects the Redux's state to the component's props
 function mapStateToProps(state) {
   return {
     products: state.products

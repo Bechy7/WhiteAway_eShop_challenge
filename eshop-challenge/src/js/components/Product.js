@@ -10,9 +10,12 @@ class Product extends Component {
         };
     }
 
+    //Increment the number of a certain item added to the basket
     IncrementItem = () => {
         this.setState({ clicks: this.state.clicks + 1 });
     }
+
+    //Decrease the number of a certain item added to the basket
     DecreaseItem = () => {
         if (this.state.clicks > 0) {
             this.setState({ clicks: this.state.clicks - 1 });

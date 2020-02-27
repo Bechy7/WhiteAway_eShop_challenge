@@ -5,12 +5,16 @@ const initialState = {
 };
 
 function rootReducer(state = initialState, action) {
-  if (action.type === DATA_LOADED) {
-    return Object.assign({}, state, {
-      products: state.products.concat(action.payload)
-    });
+  switch (action.type) {
+    case DATA_LOADED:
+      //Return the products fetched from the API
+      return Object.assign({}, state, {
+        products: state.products.concat(action.payload)
+      });
+    
+    default:
+      return state;
   }
-  return state;
 }
 
 export default rootReducer;
